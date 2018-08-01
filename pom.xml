@@ -16,7 +16,6 @@
     <modules>
         <module>eureka-server</module>
         <module>question-manager</module>
-        <module>common-manager</module>
     </modules>
 
     <parent>
