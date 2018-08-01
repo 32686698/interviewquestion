@@ -39,7 +39,7 @@
           <include refid="questionTopicColumn"/>
         from question_topic
         where del = '0'
-        and id = #{0}
+        and id = #{id}
     </select>
 
 </mapper>

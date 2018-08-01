@@ -30,7 +30,7 @@ public class QuestionTopicController {
 
     @ResponseBody
     @RequestMapping(value = "/{id}")
-    public String findQt(@PathVariable("id") String id){
+    public String findQt(@PathVariable("id") int id){
         QuestionTopic qt = questionTopicService.findQuestionTopicById(id);
         return JSONObject.toJSONString(qt);
     }

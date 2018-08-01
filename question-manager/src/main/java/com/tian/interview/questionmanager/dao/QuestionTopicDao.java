@@ -6,5 +6,5 @@ public interface QuestionTopicDao {
 
     void insertQuestionTopic(QuestionTopic qt);
 
-    QuestionTopic findQuestionTopicById(String id);
+    QuestionTopic findQuestionTopicById(int id);
 }

@@ -17,7 +17,7 @@ public class QuestionTopicServiceImpl implements IQuestionTopicService {
         quertionTopicDao.insertQuestionTopic(qt);
     }
 
-    public QuestionTopic findQuestionTopicById(String id){
+    public QuestionTopic findQuestionTopicById(int id){
         return quertionTopicDao.findQuestionTopicById(id);
     }
 }
