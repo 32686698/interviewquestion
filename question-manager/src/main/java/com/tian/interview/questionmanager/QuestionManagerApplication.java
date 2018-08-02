@@ -9,7 +9,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients
-@MapperScan("com.tian.interview.questionmanager.dao")
+@MapperScan("com.tian.interview")
 public class QuestionManagerApplication {
 
     public static void main(String[] args) {

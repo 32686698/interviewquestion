@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.tian.interview.questionmanager.model.QuestionTopic;
 import com.tian.interview.questionmanager.service.IQuestionTopicService;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -17,6 +18,10 @@ public class QuestionTopicController {
     @Resource
     private IQuestionTopicService questionTopicService;
 
+    @GetMapping(value = "/add")
+    public String intoAddQt(){
+        return "addqt";
+    }
     @ResponseBody
     @RequestMapping(value = "/insert")
     public String insertQt(){
